@@ -49,6 +49,8 @@ nav img{
     max-height: 500px;
     /* height: 60px; */
     /* background-color: blueviolet; */
+    position: relative;
+    left: 31rem;
     overflow:auto;
     overflow-wrap: anywhere;
 }
