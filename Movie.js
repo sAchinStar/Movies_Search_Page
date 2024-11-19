@@ -99,7 +99,7 @@ addEventListener("DOMContentLoaded", () => {
 
    // Fetch Data By Title
    async function movieSearch(movieName) {
-      let url = `http://www.omdbapi.com/?s=${movieName}&apikey=`
+      let url = `https://www.omdbapi.com/?s=${movieName}&apikey=`
       let key = "7c9f5688"
       let res = await fetch(url + key)
       console.log(res);
@@ -114,7 +114,7 @@ addEventListener("DOMContentLoaded", () => {
 
    //Fetch Data By ID
    async function movieDetails(ID) {
-      let res = await fetch(`http://www.omdbapi.com/?i=${ID}&apikey=7c9f5688`)
+      let res = await fetch(`https://www.omdbapi.com/?i=${ID}&apikey=7c9f5688`)
       // console.log(res);
       if (res.ok) {
          let data = res.json()
